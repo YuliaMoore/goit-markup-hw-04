@@ -143,29 +143,20 @@ ul, ol {
 .contact .link-tel {
   color: var(--maintxt-color);
 }
+.contact .link-mail {display: flex;}
 
-.contact .link-mail::before {
-  display: inline-block;
-  content: "";
-  height: 12px;
+.icon-envelope {
   width: 16px;
+  height: 12px;
   margin-right: 10px;
-  background-color: orange;
-  background-image: url("../images/icons.svg#icon-envelope");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+fill: currentColor;}
 
-.contact .link-tel::before {
-  display: inline-block;
-  content: "";
-  height: 16px;
+.icon-tel {
   width: 10px;
+  height: 16px;
   margin-right: 10px;
-  background-color: orange;
-  background-image: url('../images/icons.svg#icon-smartphone');
-  background-size: contain;
-}
+fill: currentColor;}
+
 .contact-unit {
   color: var(--maintxt-color);
 }
@@ -274,8 +265,6 @@ justify-content: center;
   width: 70px;
   height: 70px;
 }
-
-
 
 .article-benefits {
   line-height: calc(24 / 14);
@@ -400,6 +389,7 @@ padding-top: 94px;}
     justify-content:center;
     align-items: center;
   }
+  .clients-icons {fill:#AFB1B8;}
 
 /*---FOOTER---*/
 footer {
@@ -482,6 +472,10 @@ margin-bottom: 20px;
  }
  .footer-colums {display: flex;}
  .first-column {margin-right: 70px;}
+
+ .footer-container {
+  display: flex;
+ }
 
 /*---ПОРТФОЛІО---*/
 .portfolio {
@@ -569,6 +563,10 @@ margin-bottom: 20px;
   margin-bottom: 30px;
 }
 
+.projects p {
+  color:var(--maintxt-color);
+}
+
 .title-portfolio {
   font-weight: 700;
   font-size: 18px;
@@ -579,4 +577,8 @@ margin-bottom: 20px;
 
 .projects .project-site:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-site{
+  text-decoration: none;
 }
