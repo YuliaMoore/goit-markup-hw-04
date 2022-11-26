@@ -143,22 +143,22 @@ ul, ol {
 .contact .link-tel {
   color: var(--maintxt-color);
 }
-.contact .link-mail {display: flex;}
 
 .icon-envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-fill: currentColor;}
+  fill: currentColor;}
 
 .icon-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-fill: currentColor;}
+  fill: currentColor;}
 
 .contact-unit {
   color: var(--maintxt-color);
+  
 }
 
 .link:hover,
@@ -357,11 +357,13 @@ padding-top: 94px;}
   align-items: center;
   fill:#AFB1B8;
  }
- .people-soc-link:hover {
+ .people-soc-link:hover,
+ .people-soc-link:focus {
   fill: var(--lighttxt-color);
   background-color: var(--link-color);
  }
- .people-soc-link:hover .people-soc-icons{
+ .people-soc-link:hover .people-soc-icons,
+ .people-soc-link:focus .people-soc-icons{
   fill: var(--lighttxt-color);
  }
 
@@ -376,10 +378,9 @@ padding-top: 94px;}
 
 }
 .clients-items {
-  padding:16px 32px;
+
   flex-basis: calc((100% - 150px) / 6);
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;}
+}
   
   .clients-items + .clients-items {
     margin-left: 30px;
@@ -390,17 +391,29 @@ padding-top: 94px;}
     display: flex;
     justify-content:center;
     align-items: center;
+    padding:16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill:#AFB1B8;
   }
-  .clients-icons {fill:#AFB1B8;}
+  .clients-icons {    width: 106px;
+    height: 60px;
+  
+}
 
-  .clients-icons:hover,
-  .clients-icons:focus {
+  .clients-link:hover,
+  .clients-link:focus {
     fill:var(--link-color);
+    border: 1px solid #2196F3;
  }
- .clients-items:hover,
- .clients-items
- :focus {
- border: 1px solid #2196F3;}
+ .clients-icons:hover,
+ .clients-icons:focus {
+  fill:var(--link-color)}
+
+ /*.clients-items:hover,
+ .clients-items:focus {
+ border: 1px solid #2196F3;
+fill:var(--link-color)}*/
 
 /*---FOOTER---*/
 footer {
@@ -445,7 +458,6 @@ footer {
 .contact .link:focus {
   color: var(--link-color);
   fill: var(--link-color);
-  border: 1px solid #2196F3;
 }
 
 .join {
@@ -477,10 +489,12 @@ margin-bottom: 20px;
   align-items: center;
   fill:#ffffff;
  }
- .our-soc-link:hover {
+ .our-soc-link:hover,
+ .our-soc-link:focus {
   background-color:var(--link-color);
  }
- .our-soc-link:hover .people-soc-icons{
+ .our-soc-link:hover .people-soc-icons,
+ .our-soc-link:focus .people-soc-icons{
   fill: var(--lighttxt-color);
  }
  .footer-colums {display: flex;}
@@ -489,6 +503,7 @@ margin-bottom: 20px;
  .footer-container {
   display: flex;
  }
+ .join{margin-top: 12px;}
 
 /*---ПОРТФОЛІО---*/
 .portfolio {
@@ -588,7 +603,8 @@ margin-bottom: 20px;
   color: var(--text-color);
 }
 
-.projects .project-site:hover {
+.projects .project-site:hover,
+.projects .project-site:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
